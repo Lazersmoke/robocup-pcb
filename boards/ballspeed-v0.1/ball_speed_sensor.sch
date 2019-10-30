@@ -11556,7 +11556,9 @@ In this library you will find frames that can be used to help organize a schemat
 <wire x1="86.36" y1="160.02" x2="86.36" y2="231.14" width="0.635" layer="97" style="longdash"/>
 <wire x1="86.36" y1="231.14" x2="-25.4" y2="231.14" width="0.635" layer="97" style="longdash"/>
 <wire x1="-25.4" y1="231.14" x2="-25.4" y2="160.02" width="0.635" layer="97" style="longdash"/>
-<text x="-17.78" y="162.56" size="3.81" layer="97">Power Circuitry</text>
+<text x="-17.78" y="162.56" size="3.81" layer="97">Power Regulation</text>
+<text x="25.4" y="162.56" size="1.778" layer="97">Regulates 12V input
+to 5V.</text>
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="-2.54" y="205.74" smashed="yes">
@@ -11721,6 +11723,10 @@ In this library you will find frames that can be used to help organize a schemat
 </schematic>
 </drawing>
 <compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
 <note version="8.2" severity="warning">
 Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)
